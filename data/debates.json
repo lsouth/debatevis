@@ -1,0 +1,44 @@
+{"years":
+    {"2020": {
+      "dem": [
+          {"id": "2020-dem-debate1-night1", "filename": "data/2020/dem/debate1-night1.json", "label": "2020 Democratic Debate 1 Night 1"},
+          {"id": "2020-dem-debate1-night2", "filename": "data/2020/dem/debate1-night2.json", "label": "2020 Democratic Debate 1 Night 2"},
+          {"id": "2020-dem-debate2-night1", "filename": "data/2020/dem/debate2.json", "label": "2020 Democratic Debate 2"},
+          {"id": "2020-dem-debate2-night2", "filename": "data/2020/dem/debate2-night2.json", "label": "2020 Democratic Debate 2 Night 2"},
+          {"id": "2020-dem-debate3", "filename": "data/2020/dem/debate3.json", "label": "2020 Democratic Debate 3"},
+          {"id": "2020-dem-debate4", "filename": "data/2020/dem/debate4.json", "label": "2020 Democratic Debate 4"},
+          {"id": "2020-dem-debate5", "filename": "data/2020/dem/debate5.json", "label": "2020 Democratic Debate 5"},
+          {"id": "2020-dem-debate6", "filename": "data/2020/dem/debate6.json", "label": "2020 Democratic Debate 6"},
+          {"id": "2020-dem-debate7", "filename": "data/2020/dem/debate7.json", "label": "2020 Democratic Debate 7"},
+          {"id": "2020-dem-debate8", "filename": "data/2020/dem/debate8.json", "label": "2020 Democratic Debate 8"},
+          {"id": "2020-dem-debate9", "filename": "data/2020/dem/debate9.json", "label": "2020 Democratic Debate 9"},
+          {"id": "2020-dem-debate10", "filename": "data/2020/dem/debate10.json", "label": "2020 Democratic Debate 10"}
+      ],
+      "general": []
+      },
+    "2016": {
+      "dem": [
+          {"id": "2016-dem-debate1", "filename": "data/2016/dem/debate1.json", "label": "2016 Democratic Debate 1"},
+          {"id": "2016-dem-debate2", "filename": "data/2016/dem/debate2.json", "label": "2016 Democratic Debate 2"},
+          {"id": "2016-dem-debate3", "filename": "data/2016/dem/debate3.json", "label": "2016 Democratic Debate 3"},
+          {"id": "2016-dem-debate4", "filename": "data/2016/dem/debate4.json", "label": "2016 Democratic Debate 4"},
+          {"id": "2016-dem-debate5", "filename": "data/2016/dem/debate5.json", "label": "2016 Democratic Debate 5"},
+          {"id": "2016-dem-debate6", "filename": "data/2016/dem/debate6.json", "label": "2016 Democratic Debate 6"},
+          {"id": "2016-dem-debate7", "filename": "data/2016/dem/debate7.json", "label": "2016 Democratic Debate 7"},
+          {"id": "2016-dem-debate8", "filename": "data/2016/dem/debate8.json", "label": "2016 Democratic Debate 8"},
+          {"id": "2016-dem-debate9", "filename": "data/2016/dem/debate9.json", "label": "2016 Democratic Debate 9"}
+      ],
+      "general": [
+          {"id": "2016-general-debate1", "filename": "data/2016/general/debate1.json", "label": "2016 Presidential Debate 1"},
+          {"id": "2016-general-debate2", "filename": "data/2016/general/debate2.json", "label": "2016 Presidential Debate 2"},
+          {"id": "2016-general-debate3", "filename": "data/2016/general/debate3.json", "label": "2016 Presidential Debate 3"}
+        ],
+	  "rep": [
+          {"id": "2016-rep-debate1", "filename": "data/2016/rep/debate1.json", "label": "2016 Republican Debate 1"},
+          {"id": "2016-rep-debate2", "filename": "data/2016/rep/debate2.json", "label": "2016 Republican Debate 2"},
+          {"id": "2016-rep-debate3", "filename": "data/2016/rep/debate3.json", "label": "2016 Republican Debate 3"},
+          {"id": "2016-rep-debate4", "filename": "data/2016/rep/debate4.json", "label": "2016 Republican Debate 4"}
+		]
+      }
+    }
+}
