@@ -1,0 +1,102 @@
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.7.1/d3-sankey.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://code.easypz.io/easypz.latest.min.js"></script>
+
+<head>
+<title>DebateVis</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="http://web.northeastern.edu/debatevis">DebateVis</a>
+  <div class="navbar-text-group">
+    <!-- <span class="navbar-text" style="font-size: 10pt; color: black; visibility: visible;">A project by the InterVis lab at Northeastern University.</span> -->
+    <span class="navbar-text" style="font-size: 9pt;" id="currently-viewing-label">Currently viewing: </span>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a data-toggle="modal" class="nav-link" href="#how-to-read-modal" title="How to read">How to read</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">Select a different debate</a>
+        <ul id="debate-selection" class="dropdown-menu"aria-labelledby="dropdownMenu"></ul>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" style="visibility: visible;" href="http://www.northeastern.edu/">
+            <img src="icons/northeastern-seal.png" alt="Northeastern logo" width="100"></img>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="modal" href="#methodology-modal" title="Methodology"><i class="fa fa-info-circle"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://twitter.com/debatevis" title="@debatevis"><i class="fa fa-twitter"></i></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="modal" href="#share-modal" onclick="createShareableLink()" title="Get shareable link"><i class="fa fa-link"></i></a>
+      </li>
+      <li class="nav-item">
+        <a target="_blank" data-toggle="modal" href="#survey-modal" title="Take our feedback survey!" class="nav-link"><i class="fa fa-comment"></i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <div class="container-fluid" id="container">
+    <div class="row" style="margin-top: 20px;">
+      <div class="col-md-4" id="vis-container">
+        <button id="topic-interactions-toggle" showingTopics="true" style="margin-top: 30px;"></button>
+      </div>
+      <div class="col-md-4" id="transcript-container"></div>
+      <div class="col-md-4" id="timeline-container"></div>
+    </div>
+  </div>
+
+  <div id="share-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Shareable link</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body" style="font-size: 10pt;">
+          <div class="input-group">
+            <input type="text" class="form-control" value="" id="shareable-link">
+            <div class="input-group-append">
+              <button type="button" class="btn btn-outline-secondary" onclick="copyLink()">Copy link</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="js/graph-scroll.js"></script>
+
+<script type="text/javascript" src="js/timeline.js"></script>
+<script type="text/javascript" src="js/graph.js"></script>
+<script type="text/javascript" src="js/transcript.js"></script>
+<script type="text/javascript" src="js/debate.js"></script>
+
+</html>
